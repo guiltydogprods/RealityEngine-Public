@@ -1,6 +1,6 @@
 -- premake5.lua
 
-require "../premake-core/modules/android/android"
+require "premake-modules/android/android"
 
 newoption
 {
