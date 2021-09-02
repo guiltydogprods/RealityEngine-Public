@@ -5,4 +5,9 @@ obj/
 *.make
 *.apk
 *.dat
+*.vcxproj
+*.vcxproj.user
+*.vcxproj.filters
+*.sln
+*.androidproj
 ARM64/
