@@ -1,0 +1,8 @@
+.git/
+.vs/
+bin/
+obj/
+*.make
+*.apk
+*.dat
+ARM64/

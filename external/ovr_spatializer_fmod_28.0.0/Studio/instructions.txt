@@ -1,0 +1,1 @@
+Copy the contents of this directory to the FMOD Studio plugins directory to get customized GUI for the Oculus Spatializer plugins.
