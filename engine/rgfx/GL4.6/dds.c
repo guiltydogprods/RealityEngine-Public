@@ -180,5 +180,6 @@ rgfx_texture dds_load(const char *textureName, const rgfx_textureLoadDesc* desc)
 			height = max(height, 1u);
 		}
 	}
+	free(buffer);
 	return tex;
 }

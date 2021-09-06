@@ -582,7 +582,7 @@ rgfx_pipeline rgfx_createPipeline(const rgfx_pipelineDesc* desc)
 	char* infoLog = (char*)malloc(sizeof(char) * infoLogLen);
 	glGetProgramPipelineInfoLog(pipeline, infoLogLen, NULL, infoLog);
 	glBindProgramPipeline(0);
-
+	free(infoLog);
 	int32_t pipeIdx = s_rendererData.numPipelines++;
 	s_rendererData.pipelines[pipeIdx].name = pipeline;
 	s_rendererData.pipelines[pipeIdx].vertexProgramName = s_rendererData.shaders[vertIdx].name;
