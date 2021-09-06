@@ -19,6 +19,13 @@ As such I have not attached an open source license to this repository, all code 
 8. To build for Quest: set 'REQuest' as the startup project and 'ARM64' as the architecture and hit 'F7'.
 9. Launch with 'F5' or 'Ctrl+F5'.  Running with the debugger on Quest considerably slows startup time.
 
+**Issue:** I found out that using my 'setenv.bat' to set the RE_SDK_PATH environment variable temporarily, doesn't work corrently as the environment variable isn't visible to Visual Studio.  To work around this, without permenantly setting the environment variable you can run the 'x64 Native Tools Command Prompt for VS 2019' (found in the Visual Studio 2019 folder on the Start Menu) instead of a regular command prompt. Change to the project root folder, perform steps 4 & 5 above as normal and then open the solution with the command 'devenv RealityEngine.sln' 
+
 **Note:** I've embeded a simple test project 'game' which is based on a chunk of the game framework for Air Hockey Arcade with the core Air Hockey code removed.  This gets built alongside the core engine and launched in step 9 above.  Assuming I've not been an idiot and forgotten something, it should run as is, but if you would like to run with the Oculus Platform features / Avatars you'll need to create or use existing APP_IDs on the Rift / Quest stores.  It should be obvious where to add them at the top of 'game.c'
+ 
+## Keys:
+
+* **ESC** - Quit
+* **SPACE** - Toggle between the standard game view and a free roaming camera.  This is currently just a debug mode for me to zip around the world without wearing the HMD. Use **W, A, S & D** or **Arrow Keys** to move as in an FPS and the mouse to steer.
 
 **I'll add more to this document over time.**
